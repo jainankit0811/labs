@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 
 int main()
@@ -13,4 +14,21 @@ int main()
         break;
     }
     return 0;
+=======
+#include <stdio.h>
+
+int main()
+{   
+    int y;
+    printf("Enter year number.\n");
+    scanf("%d",&y);
+    switch (y%4==0)
+    {
+    case 1:printf("It is leap year.\n");
+        break;
+    default:printf("It is not leap year.\n");
+        break;
+    }
+    return 0;
+>>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
 }

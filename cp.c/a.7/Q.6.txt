@@ -1,4 +1,5 @@
 #include<stdio.h>
+<<<<<<< HEAD
 
 int main()
 
@@ -27,4 +28,34 @@ int main()
  
    return 0;
 
+=======
+
+int main()
+
+{
+
+    int n;
+
+    printf("enter any number\n");
+
+    scanf("%d",&n);
+    
+      if(n%2==0)
+     {
+
+      printf("it is even number\n");
+
+     }
+
+     else 
+
+    {
+   
+     printf("it is odd number\n");
+  
+    }
+ 
+   return 0;
+
+>>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
 }
