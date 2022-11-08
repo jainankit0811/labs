@@ -1,15 +1,3 @@
-/*#include <stdio.h>
-
-int main(){
-    int n;
-    int a[n];
-    printf("Enter number.");
-    for(n=1; n<5; n++){
-    scanf("%d",&n);
-    printf("%d",a[n]);
-    }
-    return 0;
-}*/
 #include <stdio.h>
 
 int main()

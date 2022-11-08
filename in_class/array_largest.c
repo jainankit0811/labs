@@ -11,7 +11,7 @@ int main()
 
         se=a[0];
 
-        if (a[i] < se)
+        if (a[i] > se)
         {
             se=a[i];
         }
