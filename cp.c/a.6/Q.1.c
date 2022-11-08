@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#include<stdio.h>
+/*#include<stdio.h>
 int main()
 {
    int PI=3;
@@ -95,7 +94,7 @@ int main()
      circle();
      triangle();
     return 0;
-=======
+
 #include<stdio.h>
 int main()
 {
@@ -139,7 +138,8 @@ int main()
       T=s1+s2+s3;
      printf("Sum of total side%d",T);
   return 0;
-}
+}*/
+
 #include<stdio.h>
 void rectangl()
 {
@@ -192,5 +192,4 @@ int main()
      circle();
      triangle();
     return 0;
->>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
 }
