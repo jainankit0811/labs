@@ -1,32 +1,22 @@
-<<<<<<< HEAD
 #include <stdio.h>
+#define PI 3.14
 
-void area(){
-    float a,r,PI=3.14;
-    printf("Enter redius.\n");
-    scanf("%f",&r);
-    a=2*PI*r;
-    printf("Area of circle-%f",a);
+float area(float r);
+float area(float r)
+{
+    float a;
+
+    a = 2 * PI * r;
+    
+    return a;
 }
 int main()
 {
-    area();
-    
-
-=======
-#include <stdio.h>
-
-void area(){
-    float a,r,PI=3.14;
+    float r, result;
     printf("Enter redius.\n");
-    scanf("%f",&r);
-    a=2*PI*r;
-    printf("Area of circle-%f",a);
-}
-int main()
-{
-    area();
-    
+    scanf("%f", &r);
+    result = area(r);
+    printf("area is - %0.2f\n", result);
 
->>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
+    return 0;
 }
