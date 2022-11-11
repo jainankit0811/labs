@@ -1,22 +1,30 @@
-<<<<<<< HEAD
 #include <stdio.h>
+int fc(int n);
+int fc(int n)
+{
+    int r;
+    int s = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            s = s * j;
+        }
+        r = s / i;
+        printf("%d\n", r);
+    }
+
+    return r;
+}
 
 int main()
 {
     int n;
     printf("Enter number.");
-    scanf("%d",&n);
-    printf("cube.%d\n",n*n*n);
-    return 0;
-=======
-#include <stdio.h>
+    scanf("%d", &n);
+    int a;
+    a = fc(n);
 
-int main()
-{
-    int n;
-    printf("Enter number.");
-    scanf("%d",&n);
-    printf("cube.%d\n",n*n*n);
+    printf("%d\n", a);
     return 0;
->>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
 }

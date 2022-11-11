@@ -7,7 +7,7 @@ float area(float r)
     float a;
 
     a = 2 * PI * r;
-    
+
     return a;
 }
 int main()

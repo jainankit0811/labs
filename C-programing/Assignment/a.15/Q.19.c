@@ -1,21 +1,18 @@
-<<<<<<< HEAD
 #include <stdio.h>
-
-int main(){
+int cube(int n);
+int cube(int n)
+{
+    int r;
+    r = n * n * n;
+    return r;
+}
+int main()
+{
     int n;
     printf("Enter number.\n");
-    scanf("%d",&n);
-    printf("squar is %d",n*n);
+    scanf("%d", &n);
+    int a;
+    a = cube(n);
+    printf("cube is %d", a);
     return 0;
 }
-=======
-#include <stdio.h>
-
-int main(){
-    int n;
-    printf("Enter number.\n");
-    scanf("%d",&n);
-    printf("squar is %d",n*n);
-    return 0;
-}
->>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
