@@ -2,17 +2,21 @@
 
 int main()
 {
-    int n1, n2, A;
+    int n1, n2, R;
     printf("Enter number -");
     scanf("%d%d", &n1, &n2);
+
     for (int i = 2; i <= n1 || i <= n2; i++)
     {
         if (n1 % i == 0 && n2 % i == 0)
         {
-            A = i;
+            R = i;
+        }
+        else
+        {
+            R = 0;
         }
     }
-    printf("Hcf is -%d", A);
-
+    printf("HCF is -%d", R);
     return 0;
 }
