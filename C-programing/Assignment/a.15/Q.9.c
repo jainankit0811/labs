@@ -1,33 +1,47 @@
 #include <stdio.h>
 int digit(int n, int s);
+
 int digit(int n, int s)
 {
+    int r;
     do
     {
-        int r;
         r = n % 10;
         if (r == s)
         {
+            return 1;
         }
-        printf("%d - is avileble.", r);
-        return 1;
+        n = n / 10;
+    } while (n / 10 != 0);
+
+    if (r != s)
+    {
+        return 0;
     }
-    n = n / 10;
 }
-while (n / 10 != 0)
-    ;
-}
+
 int main()
 {
     int n, s, A;
 
-    printf("Enter number - \n");
+    printf("Enter number - ");
     scanf("%d", &n);
 
-    printf("Enter which number you want to chak.\n");
+    printf("Enter which number you want to check. - ");
     scanf("%d", &s);
 
-    A =
+    A = digit(n, s);
 
-        return 0;
+    printf("\n\n");
+
+    if (A == 1)
+    {
+        printf("the digit is in the number");
+    }
+    else
+    {
+        printf("the digit is not in the number");
+    }
+
+    return 0;
 }
