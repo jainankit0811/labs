@@ -16,6 +16,11 @@ int main()
             printf("It is avilable in series.");
             break;
         }
+        else
+        {
+            printf("It is not avilable in series.");
+            break;
+        }
     }
 
     return 0;

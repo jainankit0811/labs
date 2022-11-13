@@ -9,14 +9,17 @@ int main()
     {
         if (n % i == 0)
         {
-            printf("it is not a prime number.\n");
+            if (n == i)
+            {
 
-            break;
-        }
-        else if (n % n == 0)
-        {
-            printf("it is prime number.\n");
-            break;
+                printf("%d is a prime number.\n", i);
+                break;
+            }
+            else
+            {
+                printf("it is not a prime number.\n");
+                break;
+            }
         }
     }
 }

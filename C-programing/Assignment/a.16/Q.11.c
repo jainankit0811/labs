@@ -9,7 +9,7 @@ int main()
     for (int i = 0; i <= n; i++)
     {
         n3 = n2 + n1;
-        printf("%d", n3);
+        printf("%d\n", n3);
 
         n1 = n2;
         n2 = n3;

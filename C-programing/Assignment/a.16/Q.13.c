@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n1, n2, R;
+    int n1, n2, R = 0;
     printf("Enter number -");
     scanf("%d%d", &n1, &n2);
 
@@ -11,10 +11,6 @@ int main()
         if (n1 % i == 0 && n2 % i == 0)
         {
             R = i;
-        }
-        else
-        {
-            R = 0;
         }
     }
     printf("HCF is -%d", R);
