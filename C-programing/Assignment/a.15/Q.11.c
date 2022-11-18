@@ -1,45 +1,28 @@
 #include <stdio.h>
-int LCM(int n1, int n2);
-int LCM(int n1, int n2)
-{
-    int r;
-    for (int i = 2; i <= n1 || i <= n2; i++)
-    {
-        for (int j = 2; j <= i; j++)
-        {
 
-            if (n1 % j == 0 || n2 % j == 0)
-            {
-                r = j;
-            }
-            printf("%d\n", r);
-        }
-    }
-    return r;
-}
-
-int main() /*
- {
-     int n1, n2, n;
-     printf("Enter nuber -");
+int main()
+{ /*
+     int n1, n2, max = 0;
+     printf("Enter number -");
      scanf("%d %d", &n1, &n2);
-
-     for (int i = 2; i <= n1 || i <= n2; i++)
+     if (n1 > n2)
      {
-         = n1 / i;
-         if (n1 == i)
-         {
-             printf("%d%d\n", n1, n2);
-         }
+         max = n1;
      }
-     return 0;
- }*/
-{
-    int n1, n2, A;
-    printf("Enter number -");
-    scanf("%d %d", &n1, &n2);
-    A = LCM(n1, n2);
-    printf("%d\n", A);
+     else
+     {
+         max = n2;
+     }
 
+     while (1)
+     {
+         if (max % n1 == 0 && max % n2 == 0)
+         {
+             printf("LCM is a - %d", max);
+             break;
+         }
+         ++max;
+     }
+ */
     return 0;
 }

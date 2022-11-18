@@ -27,7 +27,7 @@ int main()
     s = c;
 
     R = (q) / (p * s);
-    printf("Combination value -%d", R);
+    printf("Combination value - %d", R);
 
     return 0;
 }

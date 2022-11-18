@@ -1,30 +1,17 @@
 #include <stdio.h>
 
-int digits(int n);
-int digits(int n)
-{
-    int s;
-    int p;
-    do
-    {
-
-        for (int i = 1; i <= n; i++)
-        {
-            s = n % 10;
-            p = i;
-        }
-    } while (n / 10 != 0);
-    return p;
-}
-
 int main()
 {
-    int n, A;
+    int n, s, p, i;
     printf("Enter number.");
     scanf("%d", &n);
 
-    A = digits(n);
-    printf("%d", &A);
+    for (i = 1; i <= n; i++)
+    {
+        s = n % 10;
+        n = n / 10;
+    }
+    printf("%d\n", i);
 
     return 0;
 }

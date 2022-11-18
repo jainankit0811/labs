@@ -2,11 +2,11 @@
 int prime(int n);
 int prime(int n)
 {
-    int p;
+    int p = 1;
 
     for (int i = 2; i <= n; i++)
     {
-        for (int j = 2; j <= i; j++)
+        for (int j = 2; j <= n; j++)
         {
             if (n % j == 0)
             {
@@ -19,27 +19,30 @@ int prime(int n)
                 else
                 {
                     p = 0;
-                    break;
                 }
             }
         }
     }
     return p;
 }
+
 int main()
 {
-    int n, A;
-    printf("Enter number.\n");
-    scanf("%d", &n);
-
-    for (int i = 2; i <= n; i++)
+    int n, a, s = 0;
+    for (int i = 0; i < 10; i++)
     {
-        A = prime(i);
-        if (A == 1)
-        {
-            printf("%d ", i);
-        }
-    }
+        printf("Enter number - ");
+        scanf("%d", &n);
 
+        a = prime(n);
+
+        if (a == 1)
+        {
+            continue;
+        }
+
+        s = s + n;
+    }
+    printf("Sum is %d", s);
     return 0;
 }

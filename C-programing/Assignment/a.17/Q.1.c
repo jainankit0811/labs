@@ -1,25 +1,25 @@
 #include <stdio.h>
+
 int prime(int n);
 int prime(int n)
 {
     int p;
 
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i >= 0; i++)
     {
+        scanf("%d", &n);
         for (int j = 2; j <= n; j++)
         {
-            if (n % j == 0)
+            if (j % 2 == 0)
             {
-                if (n == j)
+                if (j == i)
                 {
-
                     p = 1;
                     break;
                 }
                 else
                 {
                     p = 0;
-                    break;
                 }
             }
         }
@@ -29,20 +29,23 @@ int prime(int n)
 
 int main()
 {
-    int n, A;
-    printf("Enter number.\n");
-    scanf("%d", &n);
-
-    for (int i = n + 1; i > 0; i++)
+    int n, s = 0, a;
+    printf("Enter number. \n");
+    for (int i = 1; i <= 10; i++)
     {
-        A = prime(i);
+        scanf("%d", &n);
 
-        if (A == 1)
+        a = prime(n);
+        if (a == 1)
         {
-            printf("%d\n", i);
             break;
         }
+        else if (a == 0)
+        {
+            s = s + n;
+        }
     }
+    printf("%d", s);
 
     return 0;
 }
