@@ -2,12 +2,12 @@
 
 int main()
 {
-    int a, n[10], r;
+    int a, n, r;
 
-    printf("Enter number.");
-    scanf("%d", &n[10]);
     for (int i = 0; i < 10; i++)
     {
+        printf("Enter number.");
+        scanf("%d", &n);
 
         if (n == 10)
         {
