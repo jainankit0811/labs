@@ -2,22 +2,21 @@
 
 int main()
 {
-    int a, n, r;
+    int n, s = 0;
     for (int i = 0; i < 10; i++)
     {
-        printf("Enter number.");
+        printf("Enter number - ");
         scanf("%d", &n);
-
-        if (n == 10)
+        if (n < 0)
         {
-            n = n - n;
             continue;
         }
         else
         {
-            printf("%d\n", n);
+            s = s + n;
         }
     }
+    printf("%d", s);
 
     return 0;
 }

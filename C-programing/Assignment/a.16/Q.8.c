@@ -2,13 +2,28 @@
 
 int main()
 {
-    int a, b, i;
-    printf("Enter number.\n");
-    scanf("%d%d", &a, &b);
-    for (i = 2; i <= a; i++)
+    int a, b, m;
+
+    printf("Enter number.");
+    scanf("%d %d", &a, &b);
+
+    if (a > b)
     {
-        a = a % i;
-        printf("%d\n", a);
+        m = a;
     }
+    else if (b > a)
+    {
+        m = b;
+    }
+    for (int i = 1; i > 0; i++)
+    {
+        if (m % a == 0 && m % b == 0)
+        {
+            printf("LCM is - %d", m);
+            break;
+        }
+        m++;
+    }
+
     return 0;
 }

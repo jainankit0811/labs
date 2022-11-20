@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int prime(int n);
 int prime(int n)
 {
@@ -10,9 +11,8 @@ int prime(int n)
         {
             if (n % j == 0)
             {
-                if (n == j)
+                if (n == i)
                 {
-
                     p = 1;
                     break;
                 }
@@ -26,20 +26,33 @@ int prime(int n)
     }
     return p;
 }
+
 int main()
 {
-    int n, A, l;
-    printf("Enter number.\n");
-    scanf("%d", &n);
-    printf("Enter last number.\n");
-    scanf("%d", &l);
+    int n, a, b, A;
 
-    for (int i = n; i <= l; i++)
+    printf("Enter number.");
+    scanf("%d", &a);
+    printf("Enter next number.");
+    scanf("%d", &b);
+
+    for (int i = 2; i > 0; i++)
     {
+        n = i;
+
         A = prime(n);
         if (A == 1)
         {
-            printf("%d ", i);
+            if (a % n == 0 && b % n == 0)
+            {
+                printf("It is not a coprime number.");
+                break;
+            }
+            else
+            {
+                printf("It is coprime number.");
+                break;
+            }
         }
     }
 

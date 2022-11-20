@@ -1,38 +1,18 @@
-<<<<<<< HEAD
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
-{   
-    int p,n;
+{
+    int p, n;
     printf("Enter number. \n");
-    scanf("positive-%d negative-%d",&p,&n);
-    switch (p>0||n<0)
+    scanf("positive-%d negative-%d", &p, &n);
+    switch (p > 0 || n < 0)
     {
     case 1:
-        printf("positive-%d negative-%d",&p,&n);
+        printf("positive-%d negative-%d", &p, &n);
         break;
     default:
-    printf("invalid.");
+        printf("invalid.");
         break;
     }
     return 0;
-=======
-#include<stdio.h>
-
-int main()
-{   
-    int p,n;
-    printf("Enter number. \n");
-    scanf("positive-%d negative-%d",&p,&n);
-    switch (p>0||n<0)
-    {
-    case 1:
-        printf("positive-%d negative-%d",&p,&n);
-        break;
-    default:
-    printf("invalid.");
-        break;
-    }
-    return 0;
->>>>>>> 236851ad9c8c6be1eb09fb4426bf9c8dd248b1ad
 }
