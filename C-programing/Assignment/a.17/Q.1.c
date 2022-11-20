@@ -34,6 +34,10 @@ int main()
     for (int i = 1; i <= 10; i++)
     {
         scanf("%d", &n);
+        if (n == 1)
+        {
+            s = n;
+        }
 
         a = prime(n);
         if (a == 1)

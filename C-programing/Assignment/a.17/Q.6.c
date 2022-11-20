@@ -36,6 +36,11 @@ int main()
         printf("Enter number - ");
         scanf("%d", &n);
 
+        if (n == 1)
+        {
+            s = n;
+        }
+
         a = prime(n);
         if (a == 1)
         {

@@ -3,16 +3,12 @@
 int main()
 {
     int n[10];
+    int i;
 
-    for (int i = 1; i <= 10; i++)
+    printf("Enter number.");
+    for (i = 0; i < 10; i++)
     {
-        printf("Enter number.");
-        scanf("%d", n[i]);
-    }
-    for (int i = 10; i >= 1; i--)
-    {
-        printf("Enter numbre.");
-        scanf("%d", n[i]);
+        scanf("%d\n", &n[i]);
     }
 
     return 0;

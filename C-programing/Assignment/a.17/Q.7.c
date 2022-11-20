@@ -2,20 +2,16 @@
 
 int main()
 {
-    int a, n, r;
+    int a, n[10], r;
+
+    printf("Enter number.");
+    scanf("%d", &n[10]);
     for (int i = 0; i < 10; i++)
     {
-        printf("Enter number.");
-        scanf("%d", &n);
 
         if (n == 10)
         {
-            n = n - n;
             continue;
-        }
-        else
-        {
-            printf("%d\n", n);
         }
     }
 
