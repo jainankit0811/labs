@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a, n, r;
+    int n;
     for (int i = 0; i < 10; i++)
     {
         printf("Enter number.");
@@ -14,7 +14,7 @@ int main()
         }
         else
         {
-            printf("%d\n", n);
+            printf("Enter number is - %d\n", n);
         }
     }
 

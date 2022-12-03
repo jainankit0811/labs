@@ -2,13 +2,19 @@
 
 int main()
 {
-    int n[10];
-    int i;
+    int s, n, i;
 
     printf("Enter number.");
-    for (i = 0; i < 10; i++)
+    scanf("%d", &n);
+
+    for (i = 0; n > 0; i++)
     {
-        scanf("%d\n", &n[i]);
+
+        s = n % 10;
+
+        printf("%d ", s);
+
+        n = n / 10;
     }
 
     return 0;

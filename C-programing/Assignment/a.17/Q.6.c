@@ -29,7 +29,7 @@ int prime(int n)
 
 int main()
 {
-    int n, s = 0, a = 10;
+    int n, s = 0, a;
     for (int i = 1; i <= 10; i++)
     {
 
@@ -38,7 +38,7 @@ int main()
 
         if (n == 1)
         {
-            s = n;
+            s = s + n;
         }
 
         a = prime(n);

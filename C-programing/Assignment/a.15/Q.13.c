@@ -31,7 +31,7 @@ int main()
     }
     else if (p == 0)
     {
-        printf("It is a not a not a prime number.");
+        printf("It is a not a prime number.");
     }
     return 0;
 }
