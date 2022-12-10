@@ -2,19 +2,42 @@
 
 int main()
 {
-    int n[], i, j;
+    int a[5], b[5], c[10], i, k, j, m = 0;
+
+    printf("Enter first array number.\n ");
+
     for (i = 0; i < 5; i++)
     {
-        printf("Enter first array number. ");
-        scanf("%d", &n[i]);
+        scanf("%d", &a[i]);
     }
+
+    printf("Enter second array number.\n");
+
     for (j = 0; j < 5; j++)
     {
-        printf("Enter second array number.");
-        scanf("%d", &n[j]);
+        scanf("%d", &b[j]);
+    }
+
+    while (k)
+    {
+
+        if (a[i] > b[j])
+        {
+            m = c[k];
+            c[k] = b[i];
+            i++;
+        }
+        else
+        {
+            m = c[k];
+            c[k] = a[j];
+            j++;
+        }
+        k++;
     }
     for (int k = 0; k < 10; k++)
     {
+        printf("descending - %d\n", c[k]);
     }
 
     return 0;
