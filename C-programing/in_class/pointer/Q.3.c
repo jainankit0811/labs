@@ -1,53 +1,55 @@
 #include <stdio.h>
 
-void linear_search(int *, int *);
+void linear_search(int, int);
+
+int a = 0;
 
 int main()
 {
+    int n[10], key, i;
 
-    int n[10], key, *A, i;
-
-    for (i = 0; i < 10; i++)
+    for (i = 1; i <= 10; i++)
     {
-        printf("Enter number - ");
+        printf("Enteer number - ");
         scanf("%d", &n[i]);
     }
 
     printf("Enter number - ");
     scanf("%d", &key);
 
-    linear_search(&n[i], &key);
+    linear_search(&n[10], &key);
 
-    if (key != 1)
+    if (a == key)
     {
         printf("%d", key);
     }
     else
     {
-        printf("not found.");
+        printf("not found");
     }
-
-    printf("%d", key);
 
     return 0;
 }
-void linear_search(int n[], int *q)
+void linear_search(int p, int key)
 {
-    int i;
-    while (i != 0)
+
+    for (int i = 1; i <= 10; i++)
     {
-        for (int i = 0; i < 10; i++)
+        while (i != 0)
         {
 
-            if (n[i] == *q)
+            a = p == key ? key : 0;
+
+            if (a == key)
             {
-                *q == 1;
                 break;
             }
+
+            i = i - 1;
         }
-        if (n[i] != *q)
+        if (a == key)
         {
-            *q == 0;
+            break;
         }
     }
 }

@@ -18,7 +18,7 @@ int main()
 void swap(int *p, int *q)
 {
     int temp;
-    printf("Function-Before swap: p=%d  q=%d\n", p, q);
+    printf("Function-Before swap: p=%d  q=%d\n", *p, *q);
 
     temp = *p;
     *p = *q;
