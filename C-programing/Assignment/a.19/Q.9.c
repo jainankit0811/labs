@@ -2,13 +2,13 @@
 
 int main()
 {
-    int n[], i, j;
+    int n[10], r, i, j, k;
     for (i = 0; i < 5; i++)
     {
         printf("Enter first array number. ");
         scanf("%d", &n[i]);
     }
-    for (j = 0; j < 5; j++)
+    for (j = 5; j < 10; j++)
     {
         printf("Enter second array number.");
         scanf("%d", &n[j]);

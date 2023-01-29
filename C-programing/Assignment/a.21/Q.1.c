@@ -3,7 +3,7 @@
 int main()
 {
     char n[] = {"ankit jain."};
-    scanf("%s", n[]);
+    scanf("%ld", sizeof n);
 
     return 0;
 }
