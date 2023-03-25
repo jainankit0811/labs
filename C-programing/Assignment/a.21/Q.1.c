@@ -2,11 +2,9 @@
 
 int main()
 {
-<<<<<<< HEAD
     char n[] = {"ankit jain."};
     scanf("%ld", sizeof n);
 
-=======
     char n[100];
     int count = 0;
 
@@ -26,6 +24,5 @@ int main()
     }
 
     printf("The size of the string is - %d", count);
->>>>>>> a457e8bd50c3dabd31de5ab458f29d19f7e8222f
     return 0;
 }

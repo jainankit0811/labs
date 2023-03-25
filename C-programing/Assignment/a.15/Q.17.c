@@ -6,7 +6,7 @@ int main()
     printf("Enter number.\n");
     scanf("%d", &n);
 
-    for (int i = 2; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         n3 = n1 + n2;
         printf("%d\n", n3);

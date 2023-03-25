@@ -1,20 +1,28 @@
 #include <stdio.h>
 
-int main()
+int fct(int n);
+int fct(int n)
 {
-
-    int n, s = 1;
-
-    printf("Enter number.\n");
-    scanf("%d", &n);
-
+    int s = 1;
     for (int i = 1; i <= n; i++)
     {
 
         s = s * i;
-
-        printf("%d\n", s);
     }
+    return s;
+}
+int main()
+{
+
+    int n;
+
+    printf("Enter number.\n");
+    scanf("%d", &n);
+
+    int ans;
+    ans = fct(n);
+
+    printf("factorial-%d", ans);
 
     return 0;
 }
