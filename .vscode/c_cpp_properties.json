@@ -1,6 +1,7 @@
 {
   "configurations": [
     {
+<<<<<<< HEAD
       "name": "windows-gcc-x86",
       "includePath": [
         "${workspaceFolder}/**"
@@ -16,3 +17,14 @@
   ],
   "version": 4
 }
+=======
+      "name": "Win32",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "compilerPath": "cl.exe",
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ],
+  "version": 4
+}
+>>>>>>> 6cf3c724b6842eca050b084a12956934c668b84a
